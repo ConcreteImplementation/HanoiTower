@@ -3,18 +3,20 @@ using System.Text;
 using System.IO;
 using System.Diagnostics;
 
+
+
 namespace HanoiTower
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //int disks = 7;
-            //int wait = 500;
-            //TowerDescribe tower = new TowerDescribe(disks, wait);
-            //tower.Solve();
+            int disks = 7;
+            int wait = 500;
+            TowerDescribe tower = new TowerVerify(disks, wait);
+            tower.Solve();
 
-            TicksCount();
+            //TicksCount();
         }
 
 
@@ -25,7 +27,7 @@ namespace HanoiTower
             
             StringBuilder csv = new StringBuilder("NbDisks,Ticks\n");
 
-            for (int disks = 1; disks <= 20; disks++)
+            for (int disks = 1; disks <= 30; disks++)
             {
                 Console.Write($"Solving {disks,-4} disks");
 

@@ -19,7 +19,7 @@ namespace HanoiTower
             Console.Clear();
             Console.WriteLine(this);
 
-            if(Console.KeyAvailable)
+            if (Console.KeyAvailable)
             {
                 Console.ReadKey(false);
                 Console.WriteLine("P A U S E D ");
